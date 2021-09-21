@@ -8,9 +8,9 @@ def SwapFileData():
         data_sampleB = sampleB.read()
 
     with open(fileOneData, 'w') as sampleA:
-        data_sampleA.write(data_sampleA)
+        sampleA.write(data_sampleB)
 
     with open(fileTwoData, 'w') as sampleB:
-        data_sampleB.write(data_sampleB)
+        sampleB.write(data_sampleA)
 
 SwapFileData()
